@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/* ol, ul {
+	list-style: none;
+} */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ================================================= */
+/* FIRST MOBILE */
+/* ================================================= */
+
+.bold{
+    font-weight: bold;
+}
+body{
+    background-color: #cccccc;
+}
+
+h1{
+    font-size: 32px;
+}
+#navbar{
+    margin-top: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+    border: solid #000000 2px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #dddddd;
+}
+.divisor{
+    border-bottom: #555555 solid 2px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+} 
+.divisor:last-of-type{
+    margin-bottom: 10px;
+}
+#navbar header{
+    font-weight: bold;
+    width: 400px;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+#navbar ul{
+    list-style: none;
+}
+#list {
+    display: none;
+}
+#list a{
+    margin-left: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #555555;
+    font-weight: bold;
+    cursor: pointer;
+}
+#navlist{
+    display: none;
+}
+#navlist:checked ~ ul{
+    display: block;
+}
+#main-doc{
+    background-color: #aaaaaa;
+    border-radius: 5px;
+    margin: 10px 5%;
+    padding: 10px 10px;
+}
+#main-doc h1{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#main-doc p{
+    text-indent: 15px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.main-section{
+    padding: 10px 5%;
+background-color: #dddddd;
+margin-bottom: 10px;
+}
+pre{
+    background-color: #ffffff;
+    padding: 10px;
+    font-style: italic;
+    margin-bottom: 10px;
+    overflow: scroll;
+}
+img{
+    max-width: 95%;
+}
+ul{
+    line-height: 25px; 
+}
+
+.footer{
+    margin: 20px 10%;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(34, 34, 34,0.7);
+}
+.footer a:link{
+    color: #ffffff;
+}.footer a:visited{
+    color: #ffffff;
+}
+.footer a:hover{
+    color: rgba(72, 53, 245);
+}
+.footer a:active{
+    color: rgba(72, 53, 245);
+}
+
+/* ================================================= */
+/* MEDIA QUERIES */
+/* ================================================= */
+
+@media only screen and (min-width:768px){
+#navbar{
+    position: fixed;
+    width: 25%;
+}
+#navbar header{
+    width: 95%;
+}
+#list{
+    display: block;
+    text-align: center;
+}
+#main-doc{
+    position: relative;
+    width: 65%;
+    left: 25%;
+}
+}
+
+@media only screen and (min-width:1200px){
+
+    #list{
+        text-align: left;
+    }
+
+
+}
